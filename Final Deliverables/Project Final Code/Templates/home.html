@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<div lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="{{url_for('static', filename='img/logo.png')}}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<>
+
+    <form method="POST"></form>
+ <div class="bg-img">
+     <div class="container"></div>
+ <div class="nav">
+  <a class="active" href="#home">HOME</a>
+  <a class="active" href="https://www.bbc.com/news">   ALL NEWS</a>
+  <a class="active" href="https://timesofindia.indiatimes.com/sports">   SPORT</a>
+  <a class="active" href="https://timesofindia.indiatimes.com/travel">   TRAVEL</a>
+  <a class="active" href="https://www.music-news.com/">   MUSIC</a>
+  <a class="active" href="https://www.accuweather.com/en/in/india-weather">   WEATHER</a>
+
+     <a class="active" href="http://127.0.0.1:5000">LOGOUT</a>
+ </div>
+</div>
+</div>
+
+<section id="main">
+    <div class="banner">
+    </div>
+    <div class = "head">TODAY'S TOP HEADLINES</div>
+    Tamil Nadu: Finally, tenders to widen East Coast Road floated at Rs 104 crore
+    <div class="wrapper">
+        <div class="item"><a href="https://timesofindia.indiatimes.com/city/chennai/tamil-nadu-finally-tenders-to-widen-east-coast-road-floated-at-rs-104-crore/articleshow/94691822.cms"><img src="https://pic-bucket.s3.us-east.cloud-object-storage.appdomain.cloud/94691824.png"></a></div>
+        <div class = "c-box">
+        <div class="content"><a href="https://timesofindia.indiatimes.com/sports"><h2>sports news</h2></a></div>
+        <div class="content"><a href="https://timesofindia.indiatimes.com/topic/two-accidents-on-ecr#:~:text=A%20college%20student%20died%20and%20three%20others%20suffered,ECR%20TNN%20%2F%20Oct%2012%2C%202020%2C%2011%3A29%20%28IST%29"><p></p></a></div>
+        <div class="content"><p style="color:rgb(0, 0, 0);">Publish Date:-today </p><p></p></div>
+        </div>
+        </div>
+    
+    <div class = "head"></div>
+    <div class="wrapper">
+        <div class="item"><a href="https://timesofindia.indiatimes.com/sports"><img src="https://pic-bucket.s3.us-east.cloud-object-storage.appdomain.cloud/95623116.jpg"></a></div>
+        <div class = "c-box">
+        <div class="content"><a href="https://www.news18.com/politics/"><h2>politics</h2></a></div>
+        <div class="content"><p></p></div>
+        <div class="content"><p style="color:rgb(0, 0, 0);">Publish Date:- today </p><p>  </p></div>
+        </div>
+        </div>
+        </div>
+</section>
+
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "b6b55f24-6ef8-4584-af7f-f2ecb93c9c66", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "296aa6c9-fc6a-46e3-b1cf-04917e3e4abf", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+</body>
+</html>
